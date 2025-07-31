@@ -2,8 +2,7 @@
 """
 CSV ID Parser
 
-This script reads a CSV file and extracts all "id" values into an array,
-excluding NULL values. 
+This script reads a CSV file and extracts all "id" values into an array, excluding NULL values. 
 
 The resulting array is used to perform an API call to Venafi Cloud to retire+blocklist the certificates.
 
@@ -20,10 +19,10 @@ Requirements:
 - vaas_api_key: API key for Venafi Cloud
 """
 
-import pandas as pd
 import sys
 import os
 import requests
+import pandas as pd
 
 vaas_api_key = input("Enter your Venafi Cloud API key: ")
 
